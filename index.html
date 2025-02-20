@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="a.ico">
+    <title>Typing Speed Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="timer-container" id="timer">00:00</div>
+    <div class="container">
+        <h1>Typing Speed Test</h1>
+        
+        <div class="stats-container">
+            <div class="stat-box">
+                <span class="stat-label">Time</span>
+                <select id="time-select">
+                    <option value="60">60s</option>
+                    <option value="120">2 min</option>
+                    <option value="180">3 min</option>
+                    <option value="300">5 min</option>
+                </select>
+            </div>
+            <div class="stat-box">
+                <span class="stat-label">WPM</span>
+                <span id="wpm">0</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-label">CPM</span>
+                <span id="cpm">0</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-label">Accuracy</span>
+                <span id="accuracy">0</span>%
+            </div>
+            <div class="stat-box">
+                <span class="stat-label">Errors</span>
+                <span id="errors">0</span>
+            </div>
+        </div>
+
+        <div class="type-box">
+            <div id="quote" class="quote"></div>
+            <textarea id="input" rows="3" placeholder="Start typing here..." disabled></textarea>
+        </div>
+
+        <div class="buttons">
+            <button id="start">Start Test</button>
+            <button id="reset">Reset</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+    <footer class="footer">
+        <p>&copy;Nilarka Das - +918207070408</p>
+    </footer>
+</body>
+
+</html>
